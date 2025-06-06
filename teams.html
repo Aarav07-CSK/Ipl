@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IPL 2025 – Teams</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #fdfbfb, #ebedee);
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #0b0b45;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      animation: fadeInDown 1s ease;
+    }
+    nav {
+      background-color: #1e1e1e;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
+    }
+    nav a:hover {
+      background-color: #444;
+    }
+    .teams {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 30px;
+    }
+    .team-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 200px;
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 0.8s ease;
+    }
+    .team-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    .team-card img {
+      width: 100px;
+      height: auto;
+    }
+    .team-card h3 {
+      margin: 10px 0 0 0;
+    }
+    footer {
+      background-color: #0b0b45;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>IPL 2025 Teams</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="winners.html">Winners</a>
+  </nav>
+
+  <div class="teams">
+    <div class="team-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/Chennai_Super_Kings_Logo.svg" alt="CSK" />
+      <h3>Chennai Super Kings</h3>
+    </div>
+    <div class="team-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Mumbai_Indians_Logo.svg" alt="MI" />
+      <h3>Mumbai Indians</h3>
+    </div>
+    <div class="team-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/0/09/Rajasthan_Royals_Logo.svg" alt="RR" />
+      <h3>Rajasthan Royals</h3>
+    </div>
+    <div class="team-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/3/31/Royal_Challengers_Bangalore_Logo.svg" alt="RCB" />
+      <h3>Royal Challengers Bangalore</h3>
+    </div>
+    <div class="team-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/0/0a/Kolkata_Knight_Riders_Logo.svg" alt="KKR" />
+      <h3>Kolkata Knight Riders</h3>
+    </div>
+    <div class="team-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/e/eb/Delhi_Capitals_Logo.svg" alt="DC" />
+      <h3>Delhi Capitals</h3>
+    </div>
+    <div class="team-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/e/ef/Sunrisers_Hyderabad_Logo.svg" alt="SRH" />
+      <h3>Sunrisers Hyderabad</h3>
+    </div>
+    <div class="team-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/d/d4/Punjab_Kings_Logo.svg" alt="PBKS" />
+      <h3>Punjab Kings</h3>
+    </div>
+    <div class="team-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/3/3f/Gujarat_Titans_Logo.svg" alt="GT" />
+      <h3>Gujarat Titans</h3>
+    </div>
+    <div class="team-card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/3/36/Lucknow_Super_Giants_Logo.svg" alt="LSG" />
+      <h3>Lucknow Super Giants</h3>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 IPL Fan Page | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
