@@ -7,12 +7,12 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #f8f9fa, #dfe6e9);
+      background: linear-gradient(135deg, #f6f9fc, #e0eafc);
       margin: 0;
       padding: 0;
     }
     header {
-      background-color: #2f3542;
+      background-color: #1e272e;
       color: white;
       padding: 20px;
       text-align: center;
@@ -25,11 +25,11 @@
     }
     header h1 {
       display: inline;
-      font-size: 2rem;
+      font-size: 2.2rem;
       vertical-align: middle;
     }
     nav {
-      background-color: #57606f;
+      background-color: #2f3640;
       display: flex;
       justify-content: center;
       animation: fadeIn 2s;
@@ -38,35 +38,46 @@
       color: white;
       padding: 14px 20px;
       text-decoration: none;
-      transition: background 0.3s;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.3s;
     }
     nav a:hover {
-      background-color: #747d8c;
+      background-color: #4b6584;
+      transform: scale(1.05);
     }
     .winner {
       background: white;
-      margin: 15px auto;
-      padding: 15px;
+      margin: 20px auto;
+      padding: 20px;
       max-width: 700px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
       transition: transform 0.3s, box-shadow 0.3s;
-      animation: fadeInUp 0.7s ease-in-out;
+      animation: fadeInUp 0.6s ease-in-out;
+      position: relative;
     }
     .winner:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     }
     .winner h3 {
-      color: #1e272e;
-      margin: 0;
+      color: #192a56;
+      margin: 0 0 5px 0;
     }
     .winner p {
-      color: #57606f;
-      margin-top: 5px;
+      color: #636e72;
+      margin: 0;
+    }
+    .winner::before {
+      content: "🏆";
+      font-size: 1.5rem;
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      animation: pop 1s ease;
     }
     footer {
-      background-color: #2f3542;
+      background-color: #1e272e;
       color: #fff;
       text-align: center;
       padding: 20px;
@@ -85,6 +96,10 @@
       from {opacity: 0;}
       to {opacity: 1;}
     }
+    @keyframes pop {
+      0% { transform: scale(0); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
   </style>
 </head>
 <body>
@@ -99,7 +114,6 @@
   </nav>
 
   <section>
-    <!-- Updated list of IPL winners -->
     <div class="winner"><h3>2025 – Kolkata Knight Riders</h3><p>Defeated Sunrisers Hyderabad</p></div>
     <div class="winner"><h3>2024 – Kolkata Knight Riders</h3><p>Defeated Sunrisers Hyderabad</p></div>
     <div class="winner"><h3>2023 – Chennai Super Kings</h3><p>Defeated Gujarat Titans</p></div>
@@ -125,4 +139,3 @@
   </footer>
 </body>
 </html>
-
