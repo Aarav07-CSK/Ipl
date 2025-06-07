@@ -6,20 +6,30 @@
   <title>IPL 2025 – Teams</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #fdfbfb, #ebedee);
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
       margin: 0;
       padding: 0;
     }
     header {
-      background-color: #0b0b45;
-      color: #fff;
+      background-color: #1e1e1e;
+      color: white;
       padding: 20px;
       text-align: center;
       animation: fadeInDown 1s ease;
     }
+    header img {
+      width: 60px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    header h1 {
+      display: inline;
+      font-size: 2rem;
+      vertical-align: middle;
+    }
     nav {
-      background-color: #1e1e1e;
+      background-color: #333;
       display: flex;
       justify-content: center;
     }
@@ -27,58 +37,52 @@
       color: white;
       padding: 14px 20px;
       text-decoration: none;
-      display: block;
+      transition: background 0.3s;
     }
     nav a:hover {
-      background-color: #444;
+      background-color: #555;
     }
-    .teams {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      padding: 30px;
-    }
-    .team-card {
+    .team {
       background: white;
-      border-radius: 15px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      width: 200px;
-      text-align: center;
-      padding: 20px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      animation: fadeIn 0.8s ease;
+      margin: 20px auto;
+      padding: 15px;
+      max-width: 600px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+      animation: fadeInUp 1s ease;
     }
-    .team-card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    .team img {
+      width: 60px;
+      height: 60px;
+      margin-right: 15px;
     }
-    .team-card img {
-      width: 100px;
-      height: auto;
-    }
-    .team-card h3 {
-      margin: 10px 0 0 0;
+    .team-details {
+      flex: 1;
     }
     footer {
-      background-color: #0b0b45;
+      background-color: #1e1e1e;
       color: #fff;
       text-align: center;
       padding: 20px;
+      margin-top: 40px;
+      animation: fadeInUp 1s ease;
+    }
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
     }
     @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.95); }
-      to { opacity: 1; transform: scale(1); }
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>IPL 2025 Teams</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/en/d/d7/Indian_Premier_League_Logo.svg" alt="IPL Logo">
+    <h1>IPL 2025 - Teams</h1>
   </header>
 
   <nav>
@@ -86,51 +90,50 @@
     <a href="winners.html">Winners</a>
   </nav>
 
-  <div class="teams">
-    <div class="team-card">
-      <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/Chennai_Super_Kings_Logo.svg" alt="CSK" />
-      <h3>Chennai Super Kings</h3>
+  <section>
+    <div class="team">
+      <img src="https://upload.wikimedia.org/wikipedia/en/2/2e/Chennai_Super_Kings_Logo.svg" alt="CSK">
+      <div class="team-details">
+        <h3>Chennai Super Kings</h3>
+        <p>Captain: Ruturaj Gaikwad<br/>Home Ground: M. A. Chidambaram Stadium, Chennai</p>
+      </div>
     </div>
-    <div class="team-card">
-      <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Mumbai_Indians_Logo.svg" alt="MI" />
-      <h3>Mumbai Indians</h3>
+
+    <div class="team">
+      <img src="https://upload.wikimedia.org/wikipedia/en/5/51/Mumbai_Indians_Logo.svg" alt="MI">
+      <div class="team-details">
+        <h3>Mumbai Indians</h3>
+        <p>Captain: Hardik Pandya<br/>Home Ground: Wankhede Stadium, Mumbai</p>
+      </div>
     </div>
-    <div class="team-card">
-      <img src="https://upload.wikimedia.org/wikipedia/en/0/09/Rajasthan_Royals_Logo.svg" alt="RR" />
-      <h3>Rajasthan Royals</h3>
+
+    <div class="team">
+      <img src="https://upload.wikimedia.org/wikipedia/en/4/49/Royal_Challengers_Bangalore_Logo.svg" alt="RCB">
+      <div class="team-details">
+        <h3>Royal Challengers Bengaluru</h3>
+        <p>Captain: Faf du Plessis<br/>Home Ground: M. Chinnaswamy Stadium, Bengaluru</p>
+      </div>
     </div>
-    <div class="team-card">
-      <img src="https://upload.wikimedia.org/wikipedia/en/3/31/Royal_Challengers_Bangalore_Logo.svg" alt="RCB" />
-      <h3>Royal Challengers Bangalore</h3>
+
+    <div class="team">
+      <img src="https://upload.wikimedia.org/wikipedia/en/0/09/Gujarat_Titans_Logo.svg" alt="GT">
+      <div class="team-details">
+        <h3>Gujarat Titans</h3>
+        <p>Captain: Shubman Gill<br/>Home Ground: Narendra Modi Stadium, Ahmedabad</p>
+      </div>
     </div>
-    <div class="team-card">
-      <img src="https://upload.wikimedia.org/wikipedia/en/0/0a/Kolkata_Knight_Riders_Logo.svg" alt="KKR" />
-      <h3>Kolkata Knight Riders</h3>
+
+    <div class="team">
+      <img src="https://upload.wikimedia.org/wikipedia/en/4/4f/Kolkata_Knight_Riders_Logo.svg" alt="KKR">
+      <div class="team-details">
+        <h3>Kolkata Knight Riders</h3>
+        <p>Captain: Shreyas Iyer<br/>Home Ground: Eden Gardens, Kolkata</p>
+      </div>
     </div>
-    <div class="team-card">
-      <img src="https://upload.wikimedia.org/wikipedia/en/e/eb/Delhi_Capitals_Logo.svg" alt="DC" />
-      <h3>Delhi Capitals</h3>
-    </div>
-    <div class="team-card">
-      <img src="https://upload.wikimedia.org/wikipedia/en/e/ef/Sunrisers_Hyderabad_Logo.svg" alt="SRH" />
-      <h3>Sunrisers Hyderabad</h3>
-    </div>
-    <div class="team-card">
-      <img src="https://upload.wikimedia.org/wikipedia/en/d/d4/Punjab_Kings_Logo.svg" alt="PBKS" />
-      <h3>Punjab Kings</h3>
-    </div>
-    <div class="team-card">
-      <img src="https://upload.wikimedia.org/wikipedia/en/3/3f/Gujarat_Titans_Logo.svg" alt="GT" />
-      <h3>Gujarat Titans</h3>
-    </div>
-    <div class="team-card">
-      <img src="https://upload.wikimedia.org/wikipedia/en/3/36/Lucknow_Super_Giants_Logo.svg" alt="LSG" />
-      <h3>Lucknow Super Giants</h3>
-    </div>
-  </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 IPL Fan Page | All Rights Reserved</p>
+    <p>&copy; 2025 IPL Fan Page | Made by Aarav Madnani </p>
   </footer>
 </body>
 </html>
